@@ -5,6 +5,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: order_service
     ports:
       - "3306:3306"
     volumes:
