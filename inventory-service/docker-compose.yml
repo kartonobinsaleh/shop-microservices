@@ -1,11 +1,11 @@
 services:
   mysql:
     image: mysql:8.3.0
-    container_name: mysql_order
+    container_name: mysql_inventory
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: mysql
-      MYSQL_DATABASE: order_service
+      MYSQL_DATABASE: inventory_service
     ports:
       - "3306:3306"
     volumes:
